@@ -1,0 +1,62 @@
+html {
+  font-size: 14px;
+  height: 100vh;
+}
+
+body {
+  background-color: blanchedalmond;
+  height: 100%;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+.App {
+  margin: 0 56px;
+}
+
+h1 {
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 900;
+  margin-top: 48px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+article {
+  background-color:burlywood;
+  margin-top: 56px;
+  padding: 56px;
+}
+
+article > p {
+  margin: 12px auto;
+  max-width: 50ch;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: center;
+  margin: 36px;
+}
+
+.figure-1,
+.figure-2 {
+  background-color: darkgoldenrod;
+  border: 1px solid #000;
+  height: 250px;
+  margin: 24px auto;
+  width: 400px;
+}
+
+.figure-2 {
+  border-radius: 50%;
+  width: 250px;
+}
