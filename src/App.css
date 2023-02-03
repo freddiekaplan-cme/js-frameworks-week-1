@@ -5,7 +5,11 @@ html {
 
 body {
   background-color: blanchedalmond;
+  font-family: 'Signika', sans-serif;
+  font-size: 14px;
   height: 100%;
+  line-height: 1.6;
+  margin: 0;
 }
 
 * {
@@ -13,24 +17,35 @@ body {
 }
 
 .App {
+  color: rgb(26, 13, 2);
   margin: 0 56px;
 }
 
 h1 {
+  color: goldenrod;
   font-size: 56px;
-  font-style: italic;
-  font-weight: 900;
   margin-top: 48px;
 }
 
 h1,
 h2 {
+  font-family: 'Lobster', cursive;
   text-align: center;
+}
+
+a:link,
+a:visited {
+  color: rgb(78, 57, 7);
+  font-weight: 700;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 article {
   background-color:burlywood;
-  margin-top: 56px;
+  margin: 56px 0;
   padding: 56px;
 }
 
@@ -38,6 +53,20 @@ article > p {
   margin: 12px auto;
   max-width: 50ch;
 }
+
+/*
+.article {
+  background-color:burlywood;
+}
+
+.second-article {
+  background-color:rgb(151, 126, 94);
+}
+
+.third-article {
+  background-color:rgb(159, 117, 62);
+}
+*/
 
 .buttons {
   display: flex;
@@ -47,16 +76,53 @@ article > p {
   margin: 36px;
 }
 
-.figure-1,
-.figure-2 {
+button {
+  background-color: goldenrod;
+  border-style: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 24px;
+}
+
+button:hover {
+  background-color: rgb(244, 185, 38);
+}
+
+.figures {
+  display: flex;
+  gap: 24px;
+  height: 200px;
+  margin: 48px;
+}
+
+.figure {
+  align-items: center;
   background-color: darkgoldenrod;
   border: 1px solid #000;
-  height: 250px;
-  margin: 24px auto;
+  color: blanchedalmond;
+  display: flex;
+  font-weight: 700;
+  height: 100%;
+  justify-content: center;
   width: 400px;
 }
 
-.figure-2 {
-  border-radius: 50%;
-  width: 250px;
+.article-pic {
+  margin-top: 48px;
+  width: 100%;
+}
+
+.hide-article {
+  display: none;
+}
+
+footer {
+  background-color: goldenrod;
+}
+
+.footer-copy {
+  color: blanchedalmond;
+  padding: 80px;
+  text-align: center;
 }

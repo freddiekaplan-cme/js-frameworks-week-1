@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 notes.txt
+src/App_copy.css
+src/App_copy.jsx
