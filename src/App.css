@@ -43,18 +43,18 @@ a:hover {
   opacity: 0.8;
 }
 
-article {
-  background-color:burlywood;
-  margin: 56px 0;
-  padding: 56px;
-}
-
 article > p {
   margin: 12px auto;
   max-width: 50ch;
 }
 
-/*
+.article,
+.second-article,
+.third-article {
+  margin: 56px 0;
+  padding: 56px;
+}
+
 .article {
   background-color:burlywood;
 }
@@ -66,7 +66,6 @@ article > p {
 .third-article {
   background-color:rgb(159, 117, 62);
 }
-*/
 
 .buttons {
   display: flex;
