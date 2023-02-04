@@ -19,8 +19,8 @@ function getActiveClassName (activeArticle, currentArticle) {
 
 function App() {
   const [activeArticle, setActiveArticle] = useState('First Article')
-
-  const [buttonText, setButtonText] = useState("Next Article: My Project");
+  const [buttonText, setButtonText] = useState('Next Article: My Project');
+  const [buttonColor, setButtonColor] = useState('article');
 
   return (
     <>
@@ -30,61 +30,32 @@ function App() {
         </header>
         <main>
           <div className="buttons">
-
-        {/*
-            <button onClick={() => {
-              setActiveArticle((a) => {
-                if (a === 'First Article') {
-                  return 'Second Article'
-                }
-                else if (a === 'Second Article') {
-                  return 'Third Article'
-                }
-                  else if (a === 'Third Article') {
-                    return 'First Article'
-                } else {
-                  return 'First Article'
-                }
-              })
-            }}>Switch Article</button>
-          */}
-      
-            <button onClick={() => {
-
+            <button className={`${buttonColor}`} onClick={() => {
               setActiveArticle((a) => {
                 if (a === 'First Article') {
                   setButtonText("Next Article: Project Design")
+                  setButtonColor('second-article')
                   return 'Second Article'
                 }
                 else if (a === 'Second Article') {
                   setButtonText("Next Article: About Me")
+                  setButtonColor('third-article')
                   return 'Third Article'
                 }
                 else if (a === 'Third Article') {
-                    setButtonText("Next Article: My Project")
-                    return 'First Article'
+                  setButtonText("Next Article: My Project")
+                  setButtonColor('article')
+                  return 'First Article'
                 } else {
                   setButtonText("Next Article: My Project")
+                  setButtonColor('article')
                   return 'First Article'
                 }
               })
-            }}>
-              
+            }}>             
               {buttonText}
-
             </button>
 
-             {/*  
-            <button onClick={() => { 
-                  setMyText("My Changed Text")}}>
-               
-                </button>
-                
-                getActiveArticle(() => {
-                return "show-article"
-                })
-                
-          }}>All Articles</button> */}
           </div>
 
           <article className={`${getActiveClassName(activeArticle, 'First Article')}`} >

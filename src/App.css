@@ -43,16 +43,14 @@ a:hover {
   opacity: 0.8;
 }
 
+article {
+  margin: 56px 0;
+  padding: 56px;
+}
+
 article > p {
   margin: 12px auto;
   max-width: 50ch;
-}
-
-.article,
-.second-article,
-.third-article {
-  margin: 56px 0;
-  padding: 56px;
 }
 
 .article {
