@@ -8,12 +8,15 @@ function getActiveClassName (activeArticle, currentArticle) {
     return 'show-article, article'
   }
   else if (activeArticle === currentArticle && activeArticle === 'Second Article') {
-     return 'show-article, second-article'
+    return 'show-article, second-article'
    }
    else if (activeArticle === currentArticle && activeArticle === 'Third Article') {
-     return 'show-article, third-article'
+    return 'show-article, third-article'
+   }
+   else if (activeArticle === 'All Articles') {
+    return 'show-article, article'
    } else {
-     return 'hide-article'
+     return 'hide-element'
     }
 }
 
@@ -30,6 +33,7 @@ function App() {
         </header>
         <main>
           <div className="buttons">
+            
             <button className={`${buttonColor}`} onClick={() => {
               setActiveArticle((a) => {
                 if (a === 'First Article') {
@@ -54,6 +58,14 @@ function App() {
               })
             }}>             
               {buttonText}
+            </button>
+
+            <button onClick={() => {
+              setActiveArticle('All Articles')
+              getActiveClassName(activeArticle, 'All Articles')
+              setButtonText("Show One Article")
+            }}>
+              Show All Articles
             </button>
 
           </div>
