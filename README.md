@@ -2,7 +2,6 @@
 Small React site describing an upcoming project, available [here.](https://github.com/freddiekaplan-cme/js-frameworks-week-3). Using the useState hook to loop through different articles or showing them all.
 
 ## What I Used
-- App
 - CSS
 - Imports
 - React
